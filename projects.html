@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="Hoose">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+		
+	<link rel="icon" type="image/png" sizes="32x32" href="images/electric_patrol/favicon-16x16.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/electric_patrol/favicon-32x32.png">
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+
+	<!-- Plugins/Components CSS -->
+	<link rel="stylesheet" href="css/swiper.css">
+
+	<!-- Niche Demos -->
+	<link rel="stylesheet" href="css/construction/construction.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Electric Patrol | Projects</title>
+    
+	<style>
+
+		:root {
+			--cnvs-primary-font: 'Playfair Display', serif;
+		}
+
+		.d-grid {
+			-ms-display: grid;
+			display: grid;
+			grid-column-gap: 40px;
+			grid-row-gap: 40px;
+   			grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+			grid-template-rows: auto auto auto auto auto;
+		}
+
+		.d-grid > * {
+			position: relative;
+			overflow: hidden;
+			width: 100%;
+			height: 100%;
+			min-height: 200px;
+			background-repeat: no-repeat;
+			background-position: center center;
+			background-size: cover;
+			background-color: #EEE;
+		}
+		.d-grid-1 {
+			grid-row-start: 1;
+			grid-column-start: 1;
+			grid-row-end: 4;
+			grid-column-end: 3;
+
+		}
+		.d-grid-2 {
+			grid-row-start: 1;
+			grid-column-start: 3;
+			grid-row-end: 3;
+			grid-column-end: 6;
+			min-height: 300px;
+
+		}
+		.d-grid-3 {
+			grid-row-start: 3;
+			grid-column-start: 3;
+			grid-row-end: 5;
+			grid-column-end: 5;
+			height: 100%;
+
+		}
+		.d-grid-4 {
+			grid-row-start: 4;
+			grid-column-start: 1;
+			grid-row-end: 5;
+			grid-column-end: 3;
+
+		}
+		.d-grid-5 {
+			grid-row-start: 3;
+			grid-column-start: 5;
+			grid-row-end: 4;
+			grid-column-end: 6;
+
+		}
+		.d-grid-6 {
+			grid-row-start: 4;
+			grid-column-start: 5;
+			grid-row-end: 6;
+			grid-column-end: 5;
+			height: 100%;
+		}
+
+		.d-grid .flex-viewport {
+			height: 100%;
+		}
+
+		.btn-right-arrow .border-line-arrow {
+			--cnvs-line-size: 0;
+			display: inline-block;
+			position: relative;
+			opacity: 0;
+			width: var(--cnvs-line-size);
+			height: 1px;
+			vertical-align: middle;
+			background-color: #000;
+			margin-left: 10px;
+			margin-right: -11px;
+			transition: all .25s ease-in-out;
+		}
+
+		.btn-right-arrow:hover .border-line-arrow {
+			opacity: 1;
+			--cnvs-line-size: 50px;
+		}
+
+	</style>
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" class="dark">
+			<div id="header-wrap">
+				<div class="container">
+					<div class="header-row py-2 py-md-0 justify-content-between flex-lg-row justify-content-lg-center">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="index.html">
+								<img class="logo-default" src="images/electric_patrol/logo.png" alt="Electric Patrol Logo">
+								<img class="logo-dark" src="images/electric_patrol/logo.png" alt="Electric Patrol Logo">
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu with-arrows">
+
+							<ul class="menu-container">
+								<li class="menu-item">
+                                    <a class="menu-link" href="index.html">
+                                        <div>Home</div>
+                                    </a>
+                                </li>
+								<li class="menu-item">
+                                    <a class="menu-link" href="services.html">
+                                        <div>Services</div>
+                                    </a>
+								</li>
+								<li class="menu-item current">
+                                    <a class="menu-link" href="projects.html">
+                                        <div>Projects</div>
+                                    </a>
+                                </li>
+								<li class="menu-item">
+                                    <a class="menu-link" href="about-us.html">
+                                        <div>About us</div>
+                                    </a>
+                                </li>
+								<li class="menu-item">
+                                    <a class="menu-link" href="contact.html">
+                                        <div>Get in touch</div>
+                                    </a>
+                                </li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+		</header><!-- #header end -->
+
+
+		<!-- Content
+		============================================= -->
+		<section id="content">
+			<div class="content-wrap pt-5 pt-md-0 py-md-0 min-vh-100">
+				<div class="position-relative">
+					<div class="container position-lg-absolute start-0 top-0 end-0 bottom-0 mb-5 mb-lg-0">
+						<div class="row align-items-center h-100">
+							<div class="col-xl-4 col-lg-5">
+
+								<div class="heading-block border-0 mw-100 mb-0">
+									<div class="heading-block mw-xs mx-auto text-center mb-5">
+										<h3 class="text-grupo-moc text-transform-none ls-0">Projects.</h3>
+									</div>
+									<p class="lead text-justify mb-5">
+										Discover our construction solutions that redefine industry standards. From groundbreaking designs to seamless execution, our projects exemplify precision and innovation.
+									</p>
+								</div>
+			
+
+								<a href="#first-project" class="text-larger text-black btn-right-arrow mt-5">
+									<span class="border-bottom border-width-2">Explore how we build success</span>
+									<span class="border-line-arrow ms-3"></span>
+									<i class="bi-chevron-right text-smaller"></i>
+								</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="row align-items-center justify-content-end">
+
+						<div class="col-xl-6 col-lg-6">
+							<div class="d-grid">
+								<div class="d-grid-1">
+									<div class="fslider h-100" data-arrows="false" data-pagi="false" data-hover="false" data-speed="1000" data-pause="4700" data-loop="true">
+										<div class="flexslider">
+											<div class="slider-wrap">
+												<div class="slide" class="w-100 h-100" style="background: url(images/electric_patrol/projects/dhs-mission-lakes/3.jpg) no-repeat center top / cover;"></div>
+												<div class="slide" class="w-100 h-100" style="background: url(images/electric_patrol/projects/dhs-mission-lakes/2.jpg) no-repeat center top / cover;"></div>
+												<div class="slide" class="w-100 h-100" style="background: url(images/electric_patrol/projects/dhs-mission-lakes/1.jpg) no-repeat center center / cover;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="d-grid-2" style="background-image: url(images/electric_patrol/projects/1.jpg); background-position: center bottom;"></div>
+								<div class="d-grid-3">
+									<div class="fslider h-100" data-arrows="false" data-pagi="false" data-hover="false" data-speed="1200" data-pause="6100" data-loop="true">
+										<div class="flexslider">
+											<div class="slider-wrap">
+												<div class="slide" class="w-100 h-100" style="background: url(images/electric_patrol/projects/ontario-project/1.jpg) no-repeat center bottom / cover;"></div>
+												<div class="slide" class="w-100 h-100" style="background: url(images/electric_patrol/projects/ontario-project/2.jpg) no-repeat center bottom / cover;"></div>
+												<div class="slide" class="w-100 h-100" style="background: url(images/electric_patrol/projects/ontario-project/3.jpg) no-repeat center bottom / cover;"></div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="d-grid-4" style="background-image: url(images/electric_patrol/projects/2.jpg);"></div>
+								<div class="d-grid-5" style="background-image: url(images/electric_patrol/projects/3.jpg);"></div>
+								<div class="d-grid-6" style="background-image: url(images/electric_patrol/projects/4.jpg);"></div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="content-wrap background-color-dark" id="first-project">
+
+				<div class="row justify-content-between align-items-center">
+					<div class="col-12">
+						<div class="heading-block border-0 text-center mw-xs mx-auto mb-0">
+							<div class="heading-block mw-xs mx-auto text-center mb-5 pt-5">
+								<h3 class="text-grupo-moc text-transform-none ls-0">Ontario.</h3>
+							</div>
+						</div>
+					</div>
+	
+
+					<div class="col-12">
+						<!-- Portfolio Single Image
+						============================================= -->
+						<div class="masonry-thumbs grid-container row row-cols-3 row-cols-lg-6 masonry-gap" data-lightbox="gallery">
+							<a href="images/electric_patrol/projects/ontario-project/1.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/1.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/4.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/4.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/5.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/5.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/6.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/6.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/7.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/7.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/8.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/8.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/9.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/9.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/10.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/10.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/11.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/11.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/12.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/12.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/14.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/14.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/ontario-project/15.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/ontario-project/15.jpg" alt="Image">
+							</a>
+						</div><!-- .portfolio-single-image end -->
+					</div>
+
+				</div>
+			</div>
+			<div class="content-wrap">
+
+				<div class="row justify-content-between align-items-center">
+					<div class="col-12">
+						<div class="heading-block border-0 text-center mw-xs mx-auto mb-0">
+							<div class="heading-block mw-xs mx-auto text-center mb-5 pt-5">
+								<h3 class="text-grupo-moc text-transform-none ls-0">DHS Mission Lakes.</h3>
+							</div>
+						</div>
+					</div>
+	
+
+					<div class="col-12">
+						<!-- Portfolio Single Image
+						============================================= -->
+						<div class="max-img-projects masonry-thumbs grid-container row row-cols-3 row-cols-lg-6 masonry-gap" data-lightbox="gallery">
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/1.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/1.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/1_2.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/1_2.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/1_3.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/1_3.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/2.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/2.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/3.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/3.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/4.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/4.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/5.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/5.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/6.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/6.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/7.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/7.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/8.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/8.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/9.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/9.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/dhs-mission-lakes/10.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/dhs-mission-lakes/10.jpg" alt="Image">
+							</a>
+						</div><!-- .portfolio-single-image end -->
+					</div>
+
+				</div>
+			</div>
+
+			<div class="content-wrap background-color-dark">
+
+				<div class="row justify-content-between align-items-center">
+					<div class="col-12">
+						<div class="heading-block border-0 text-center mw-xs mx-auto mb-0">
+							<div class="heading-block mw-xs mx-auto text-center mb-5 pt-5">
+								<h3 class="text-grupo-moc text-transform-none ls-0">Tustin Concrete.</h3>
+							</div>
+						</div>
+					</div>
+	
+
+					<div class="col-12">
+						<!-- Portfolio Single Image
+						============================================= -->
+						<div class="masonry-thumbs grid-container row row-cols-3 row-cols-lg-6 masonry-gap" data-lightbox="gallery">
+							<a href="images/electric_patrol/projects/tustin-concrete/" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/1.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/2.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/2.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/3.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/3.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/4.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/4.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/5.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/5.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/6.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/6.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/7.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/7.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/8.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/8.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/9.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/9.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/10.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/10.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/11.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/11.jpg" alt="Image">
+							</a>
+							<a href="images/electric_patrol/projects/tustin-concrete/12.jpg" data-lightbox="gallery-item" class="grid-item">
+								<img class="rounded-0" src="images/electric_patrol/projects/tustin-concrete/12.jpg" alt="Image">
+							</a>
+						</div><!-- .portfolio-single-image end -->
+					</div>
+
+				</div>
+			</div>
+
+		</section><!-- #content end -->
+
+		<!-- Footer
+		============================================= -->
+		<footer id="footer" class="dark">
+			<div class="container">
+
+				<!-- Footer Widgets
+				============================================= -->
+				<div class="footer-widgets-wrap">
+
+					<div class="row d-flex align-items-center">
+						<div class="col-lg-9">
+
+							<div class="widget d-flex align-items-center">
+
+								<img src="images/electric_patrol/logo.png" alt="Image" class="alignleft" style="margin-top: 8px; padding-right: 18px; border-right: 1px solid #4A4A4A; width: 80px;">
+
+								<p class="mb-0">
+									WE BUILD IDEAS, INNOVATING INFRASTRUCTURES.
+								</p>
+							</div>
+						</div>
+
+						<div class="col-lg-3 mt-5 mt-lg-0">
+
+							<div class="widget">
+
+								<div class="row col-mb-30">
+
+									<div class="col-12">
+										<div class="footer-big-contacts">
+											<span>Call Us</span>
+											+1 (909) 283-9350
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="footer-big-contacts">
+											<span>Send an Email</span>
+											mainadmin@epinc.us.com
+										</div>
+									</div>
+
+									<div class="col-12">
+										<div class="footer-big-contacts">
+											<span>Social Media</span>
+											<div class="d-flex justify-content-start social">
+	
+												<a href="https://www.instagram.com/epinc665/" target="_blank"  class="social-icon border-transparent  h-bg-instagram" title="Instagram">
+													<i class="fa-brands fa-instagram"></i>
+													<i class="fa-brands fa-instagram"></i>
+												</a>
+	
+												<a href="mailto:mainadmin@epinc.us.com" target="_blank"  class="social-icon border-transparent h-bg-figma">
+													<i class="fa-brands bi-envelope"></i>
+													<i class="fa-brands bi-envelope"></i>
+												</a>
+												
+											</div>
+										</div>
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+					</div>
+
+				</div><!-- .footer-widgets-wrap end -->
+			</div>
+
+			<!-- Copyrights
+			============================================= -->
+			<div id="copyrights">
+				<div class="container">
+
+					<div class="row justify-content-between">
+						<div class="col-12 col-md-auto text-center text-md-start">
+							Copyrights &copy; 2023 All Rights Reserved.
+						</div>
+					</div>
+
+				</div>
+			</div><!-- #copyrights end -->
+		</footer><!-- #footer end -->
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+	============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+	============================================= -->
+	<script src="js/functions.js"></script>
+
+</body>
+</html>
