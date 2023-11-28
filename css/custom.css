@@ -420,6 +420,10 @@
 }
 
 @media screen and (max-width: 991px) {
+	.slider-thumbs .swiper-slide {
+		height: 53px !important;
+	}
+
 	.menu-item:hover > .menu-link {
 		color: #C3C0DA;
 	}
